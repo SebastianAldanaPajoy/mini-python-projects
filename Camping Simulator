@@ -1,0 +1,65 @@
+print('''
+*******************************************************************************
+                         ////\\\
+                        /////\\\\
+                       //__   __\\
+                      -| (o \ o) |-
+                     |d|   c_\   |b|
+                      -\((\___/))/-                       ___
+                        \ \___/ /                      ||////
+                         \_____/                       | uuu
+                         |     |                      /\ _/
+                         /\ ) /\                     /  V |
+                 _______/\ \ / /\_______            /  /  |
+                /         \/V\/         \          /\ /  /V\
+               /           |o|           \        /\ V  |  o\
+              /            | |            \      /  \/\ //###|
+             /             |o|             \    /   /o/ |####|>
+            /              | |              \  /   / / <|####|>
+           /               |o|   _____       \/    \/    \##/
+          /                | |   |   |             /     |##|
+         /       /         |o|   |   |  \         /     /_/\_\
+        /       /|         | |   |___|  |\       /
+       /       / |         |o|          | \_____/
+
+*******************************************************************************
+''')
+print("Welcome to 'Camping With Your Distant Uncle Simulator.''")
+print("Your mission is to explore.") 
+
+print("You wake up from a nap in your tent. You look around and see your uncle occupied while cooking dinner.")
+print("You get up and sneak away to explore the island that you guys boated to. You reach an area with a cross road. You have two choices, which do you take?")
+first = input("Type 'left' or 'right' ")
+first_choice = first.lower()
+if first_choice == "left":
+  print("You took a path that lead you to a vast, rapid river. You don't want to finish exploring yet. ")
+  print("You see there's a boat slowly drifting towards you and you're pretty sure you can ride on it. ")
+else:
+  print("You fell into a fake floor trap and fell into a hole. Will your uncle ever find you? Try again. ")
+  quit()
+  
+second = input("Do you wait for the boat or do you swim? Type 'wait' or 'swim'. ")
+second_choice = second.lower()
+if second_choice == "swim":
+  print("Once you swim to the other side, you realize you made the right choice. The boat you were thinking of getting on was drifting to the edge of a waterfall. ")
+else:
+  print("You should've swam. The boat is drifting quickly to the edge of a waterfall and it's too late to jump off. Should've stayed with your distant uncle at camp")
+  quit()
+
+print("You've reached a dead end after walking for a while and see three cave entrances radiating different colors. You want to walk into one.")
+third = input("Which colored cave do you choose? Red, Yellow or Blue? ")
+third_choice = third.lower()
+if third_choice == "red":
+  print("It's the entrance to a volcano. You realize too late and walk into it by accident. Should've stayed with uncle.")
+  quit()
+if third_choice == "blue":
+  print("It's the ice kings santuary. Now he won't let you leave becuase he misses having friends and he thinks you're pretty cool. Try again.")
+  quit()
+if third_choice == "yellow":
+  import time
+  print("You find a treasure chest! You go to check what's inside. ")
+  time.sleep(5.5)    # Pause 5.5 seconds
+  print("You wake up abruptly to your uncle yelling that dinner is ready. He looks confused and hands you a plate of food.") 
+  print("You ask him how he found you, to which he responds")
+  print("'Buddy, you've been asleep since you set up your tent. That must've been a wild dream. Eat the food and lets go fishing, I wanna tell you some child hood stories.'")
+  print("END")
