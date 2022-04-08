@@ -33,9 +33,10 @@ choice = int(input("Which formation do you choose? Type 0 for rock, 1 for paper 
 if choice >= 3 or choice < 0:
   print("Not a valid choice, try again!")
 else:
-  print (hands[choice])
+  print(hands[choice])
   com_choice = random.randint (0, 2)
   print("Computer chose:")
+  print(hands[choice])
 
   if choice == 0 and com_choice == 2:
     print("You win!")
