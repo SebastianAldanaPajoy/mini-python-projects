@@ -1,0 +1,16 @@
+friend_heights = input("Input a list of friends heights in cm. Please don't use commas ").split()
+for n in range(0, len(friend_heights)):
+  friend_heights[n] = int(friend_heights[n])
+
+total_height = 0
+for height in friend_heights:
+  total_height += height
+print(f"total height = {total_height}")
+
+number_of_friends = 0
+for friend in friend_heights:
+  number_of_friends += 1
+print(f"number of friends = {number_of_friends}")
+
+average_height = round(total_height / number_of_friends)
+print(average_height)
